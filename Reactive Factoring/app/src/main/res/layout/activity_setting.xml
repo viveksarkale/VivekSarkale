@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_5"
+    tools:context="chat.application.activity.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/black_border"
+                android:hint="Server Address"
+                android:inputType="textEmailSubject"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:id="@+id/server_address" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:layout_marginTop="@dimen/dp_10"
+                android:src="@drawable/image_common"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/black_border"
+                android:hint="Name"
+                android:inputType="textEmailSubject"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:id="@+id/user_name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/black_border"
+                android:hint="Public / Private Key"
+                android:inputType="textEmailSubject"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:id="@+id/public_key" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

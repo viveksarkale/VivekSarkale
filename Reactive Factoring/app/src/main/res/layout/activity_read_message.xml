@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/dp_5"
+    tools:context="chat.application.activity.ReadMessageActivity">
+
+    <TextView
+        android:id="@+id/tv_ReadMessage_senderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:text="SenderName"
+        android:background="@drawable/black_border"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_20" />
+
+    <TextView
+        android:id="@+id/tv_ReadMessage_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        android:text="Subject"
+        android:background="@drawable/black_border"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_20" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/black_border"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_ReadMessage_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_5"
+                android:padding="@dimen/dp_10"
+                android:text="Body"
+                android:background="@drawable/black_border"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_20" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_read_delete"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icon_delete" />
+
+        <TextView
+            android:id="@+id/tv_readMessage_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="REPLY"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/dp_3"
+    tools:context=".MainActivity"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_itemContact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_18"
+        android:text="Name"
+        />
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/login_status"
+        android:width="10dp" />
+
+   <ImageView
+       android:id="@+id/image_setting_contact"
+       android:layout_width="@dimen/dp_40"
+       android:layout_height="@dimen/dp_40"
+       android:padding="@dimen/dp_5"
+       android:src="@drawable/icon_edit"/>
+
+</LinearLayout>

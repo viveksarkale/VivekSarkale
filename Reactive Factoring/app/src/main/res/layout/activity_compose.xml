@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_5"
+    tools:context="chat.application.activity.ComposeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"
+            android:text="TO : "/>
+
+        <TextView
+            android:id="@+id/tv_Compose_To"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:background="@drawable/black_border"
+            android:padding="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_Compose_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:inputType="textEmailSubject"
+        android:hint="Subject"
+        android:background="@drawable/black_border"
+        android:padding="@dimen/dp_10"/>
+
+    <EditText
+        android:id="@+id/ed_Compose_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:gravity="start"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:inputType="textEmailSubject"
+        android:hint="Body"
+        android:background="@drawable/black_border"
+        android:padding="@dimen/dp_10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icon_delete"
+            android:id="@+id/delete_current_message" />
+
+        <TextView
+            android:id="@+id/tv_Compose_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/button"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"
+            android:text="SEND"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/icon_sendclock"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
